@@ -3,63 +3,90 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Contact</title>
-	<link href="./assets/css/reset.css" type="text/css" rel="stylesheet">
+	<link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="./assets/css/style.css" type="text/css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-	<!-- Navigation Bar -->
-	<header>
-		<div class="nav">
-				<a href="contact.html">Contact </a>
-		</div>
-		<div class="nav">
-			<a href="portfolio.html">Portfolio </a>
-		</div>
-		<div class="nav">
-			<a href="index.html">About </a> 
-		</div>
-		<div id="name">Matthew Nagy</div>
-	</header>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Matthew Nagy</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="index.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-			
-	<!-- Main Page Content -->
-	<div class="content">	
-
-		<div id="Contact">
+<!-- header -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-7 page-header">
 			<h1>Contact</h1>
 		</div>
-
-		<form>
-			Name: <br>
-			<textarea rows="1" cols="100" name="Name" form="name"></textarea><br>
-			Email: <br>
-			<textarea rows="1" cols="100" name="Email" form="email"></textarea><br>
-			Message <br>
-			<textarea rows="5" cols="100" name="Message" form="message"></textarea><br>
-			<input type="submit" name="Submit">
-		</form>
-		
 	</div>
 
-<!-- Social Media Box -->
-	<div id="social_links">
-		<h1>Connect with Me</h1>
-		<a href="https://github.com/grndprxguy" target="_blank">
-		<img src="assets/images/github.png" alt="GitHub" style="width:60px;height:60px;"/></a>
-		<a href="https://www.linkedin.com/in/matthew-nagy-748000141/" target="_blank">
-		<img src="assets/images/linkedin.png" alt="linkedin" style="width:60px;height:60px;"/></a>
-		<a href="https://stackoverflow.com/users/8446113/matthew-nagy" target="_blank">
-		<img src="assets/images/stackoverflow.png" alt="StackOverflow" style="width:60px;height:60px;"/></a>
+<!-- social media sidebar -->
+	<div clas="row">
+		<div class="col-md-4 col-sm-12 pull-right">
+			<div class="panel panel-default">
+    			<h3 class="panel-heading">Connect with Me</h3>
+    			<div class="col-md-4 col-sm-2">
+    			<a href="https://github.com/grndprxguy" target="_blank">
+				<img src="assets/images/github.png" class="social" alt="GitHub" style="width: 75px"></a></div>
+				<div class="col-md-4 col-sm-2">
+				<a href="https://www.linkedin.com/in/matthew-nagy-748000141/" target="_blank">
+				<img src="assets/images/linkedin.png" class="social" alt="linkedin" style="width: 75px"></a></div>
+				<div class="col-md-4 col-sm-2">
+				<a href="https://stackoverflow.com/users/8446113/matthew-nagy" target="_blank">
+				<img src="assets/images/stackoverflow.png" class="social" alt="StackOverflow" style="width: 75px"></a></div>
+			</div>
+		</div>
 	</div>
-
-
-	<footer id="copyright">
-		&copy Copyright 2017 Matthew Nagy
-	</footer>
+<!-- </div> -->
+<!-- Main Page Content -->
+<!-- <div class=container> -->
+	<div class="row">
+		<div class="col-md-7 col-sm-12">
+			<form id="contact-form">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" id="name">
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+					<label for="message">Message:</label>
+					<input type="message" class="form-control" id="message">
+				</div>
+					<input type="submit" name="submit">
+				</div>
+			</form>
+		</div>
 	</div>
+</div>
 
+
+<footer>
+		<div class="footer navbar-fixed-bottom text-center">
+			<div class="row">
+				<div class="col-md-12">
+			<p> &copy; Copyright 2017 Matthew Nagy</p>
+				</div>
+			</div>
+		</div>
+</footer>
 
 </body>
 </html>
